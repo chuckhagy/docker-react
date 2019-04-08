@@ -9,7 +9,7 @@ script:
   - docker run chuckhagy/docker-react npm run test -- --coverage
 
 deploy:
-  provider: elsasticbeanstalk
+  provider: elasticbeanstalk
   region: "us-west-1"
   app: "docker-react"
   env: "DockerReact-env"
